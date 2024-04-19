@@ -1,0 +1,95 @@
+.wraper {
+  width: 500px;
+  height: 550px;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+.calculator-div {
+  width: 100%;
+  height: 100%;
+}
+.display {
+  margin-top: 0.8rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.title {
+  font-family: "Roboto Slab", serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.result-input {
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  height: 80px;
+  border-radius: 10px;
+  padding: 0rem 1rem;
+  width: 90%;
+  font-size: 2rem;
+  outline: none;
+  background-color: #bdc3c7;
+  border: none;
+  margin: 0px auto;
+  text-align: right;
+}
+.all-buttons {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 385px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.handler {
+  width: 90%;
+  height: 100%;
+  display: grid;
+  gap: 2px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.cal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(219, 219, 219);
+  font-size: 1.7rem;
+  font-weight: 500;
+  border: none;
+}
+.cal-btn:hover {
+  background-color: #d6d6d6;
+}
+.cal-btn::selection {
+  background-color: transparent;
+}
+
+.equal {
+  grid-column: 3/5;
+}
+
+/* ------------------------------------------------------------------ */
+
+
+@media screen and (max-width: 550px) {
+  .wraper {
+    width: 320px;
+    height: 450px;
+  }
+  .handler {
+    grid-template-rows: repeat(5, 58px);
+  }
+  .cal-btn {
+    font-size: 1.5rem;
+  }
+  .result-input {
+    height: 65px;
+    font-size: 1.7rem;
+  }
+  .title {
+    font-size: 1.7rem;
+  }
+}
